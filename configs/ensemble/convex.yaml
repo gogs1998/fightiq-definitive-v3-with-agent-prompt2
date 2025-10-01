@@ -1,0 +1,6 @@
+ensemble:
+  method: "simple_or_random_search"
+  base_models: ["logreg","rf"]
+  objective: "logloss"
+  trials: 2000
+  segment_by: null

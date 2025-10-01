@@ -1,0 +1,7 @@
+model:
+  name: "rf"
+  params:
+    n_estimators: 400
+    max_depth: null
+    min_samples_leaf: 2
+  calibration: "none"

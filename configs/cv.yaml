@@ -1,0 +1,10 @@
+cv:
+  kind: "time_series_grouped"
+  n_folds: 5
+  group_by: "event_id"
+  embargo_days: 14
+  time_col: "bout_datetime"
+  test_lockbox:
+    start: "2024-01-01"
+    end:   "2024-12-31"
+  seed: 42

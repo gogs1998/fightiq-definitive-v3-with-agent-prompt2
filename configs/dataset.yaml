@@ -1,0 +1,7 @@
+dataset:
+  name: "synthetic_demo"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  interim_dir: "data/interim"
+  cutoff: "2024-12-31"
+  seed: 42

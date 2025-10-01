@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "Build Data", "type": "shell", "command": "python -m pipelines.build_data"},
+    {"label": "Build Features", "type": "shell", "command": "python -m pipelines.build_features +features=base"},
+    {"label": "Train (logreg)", "type": "shell", "command": "python -m pipelines.train +model=logreg +features=base +cv=cv"},
+    {"label": "Train (rf)", "type": "shell", "command": "python -m pipelines.train +model=rf +features=base +cv=cv"},
+    {"label": "Ensemble", "type": "shell", "command": "python -m pipelines.ensemble +ensemble=convex"},
+    {"label": "Adversarial Validate", "type": "shell", "command": "python -m pipelines.adv_validate +cv=cv"},
+    {"label": "Evaluate", "type": "shell", "command": "python -m pipelines.evaluate +exp_id=EXP-0001"},
+    {"label": "Paper Assets", "type": "shell", "command": "python -m pipelines.paper_assets"},
+    {"label": "Report", "type": "shell", "command": "python -m pipelines.report"}
+  ]
+}

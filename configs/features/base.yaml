@@ -1,0 +1,16 @@
+features:
+  A_demographics: true
+  B_activity_layoff: true
+  C_experience: true
+  D_efficiency: true
+  E_durability: true
+  F_opponent_strength: true
+  G_style_matchup: true
+  H_context: true
+  I_odds: false
+  J_embeds: false
+transforms:
+  recency_halflife_days: 365
+  division_standardize: true
+  sos_adjust: true
+  use_synthetic: true

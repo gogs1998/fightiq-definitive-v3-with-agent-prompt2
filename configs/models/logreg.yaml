@@ -1,0 +1,7 @@
+model:
+  name: "logreg"
+  params:
+    C: 1.0
+    penalty: "l2"
+    max_iter: 2000
+  calibration: "none"
